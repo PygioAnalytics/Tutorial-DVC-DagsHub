@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  preprocessing:
+    cmd: python preprocess.py
+    deps:
+    - path: data/train_transaction.csv
+      md5: 58b4038d8715f5e11007b826bef00ce7
+      size: 683351067
+    - path: preprocess.py
+      md5: d2625358035ae91ce50355e9f16ad02d
+      size: 1131
+    outs:
+    - path: feature_sets/X_test.csv
+      md5: eb20acf0aa516a64acf1cb6e2aea5d81
+      size: 4351499
+    - path: feature_sets/X_train.csv
+      md5: 428929be346dc4a546c0088688707dd6
+      size: 17395189
+    - path: feature_sets/y_test.csv
+      md5: 3deddf23b368bdf593e176eef5c60d64
+      size: 16540
+    - path: feature_sets/y_train.csv
+      md5: dc638581de2ffa6d67796eb4a09638c2
+      size: 66128

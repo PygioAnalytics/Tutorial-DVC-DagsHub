@@ -1,0 +1,11 @@
+stages:
+  preprocessing:
+    cmd: python preprocess.py
+    deps:
+    - data/train_transaction.csv
+    - preprocess.py
+    outs:
+    - feature_sets/X_test.csv
+    - feature_sets/X_train.csv
+    - feature_sets/y_test.csv
+    - feature_sets/y_train.csv
